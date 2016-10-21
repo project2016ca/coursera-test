@@ -1,0 +1,99 @@
+learn sublime text editor
+learn vim short cuts
+learn python
+
+SOME SHORTCUTS:
+
+sublime-only shortcuts:
+  cmd+T: open other files in this folder
+  tab: auto completion inserted
+  :<fuzzy search> :  open menu
+  cmd+sh+p        :  open menu 
+  :w              :  save
+  cmd + B         :  build and run
+  whatever you can't find, use the Help Menu
+
+
+sublime-vim shortcuts:
+  when in ESC mode, press i to enter insert mode
+  when in insert mode, press ESC to enter ESC mode
+  all edit-related shortcuts work only in ESC mode
+  all file-related shortcuts and some edit related shortcuts work in cmd mode
+  command mode is accessed by typing ':' when in ESC mode
+  Sublime text does not have command mode, except for 
+  :w : save file
+
+  INSERTING:
+  i : insert mode
+  a : append at cursor
+  A : appends at end of line
+  o : insert empty line below
+  O : insert empty line above
+
+  EDITING:
+  u : undo previous edit
+  ctrl + r : redo 
+  d+arrow key : delete line in direction of arrow key
+  dd : delete current line only
+  d<N>j,k: delete up or down by N lines
+  dw : delete word
+  d<N>w: delete N words
+  d0 : delete to start of line
+  d$ : delete to end of line
+  d<N>gg: delete to global line N
+  dG : delete to end of file
+  dg : delete to start of file
+  x : delete current character
+  x<N>h,l : delete N left or right chars
+  r: replace current character with 
+  sh+r : replace starting at current char
+  yy : yank current line
+  y<N>j,k : yank +/- N lines
+  y<N>h,l : yank chars
+  y<N>gg : ...
+  yG : ...
+  yg : ...
+  p : paste after d or y
+  << : indent tab to margin
+  >> : indent tab from margin
+  > <N>j,k : indent +/-N lines from margin
+  < <N>j,k : ...
+
+  general command structure is cmd + argument, where cmd = {y,d,<,>,g}
+  argument is navigation OR visually selected text
+
+
+  NAVIGATION:
+  h,l : move left and right
+  j,k : move line by line
+  j,k <N> : move up-down by N lines
+  w : move word by word at start of each word
+  e : move word by word at end of each word
+  0 : move to start of line
+  $ : move to end of line
+  <N>gg : global navigation to Nth line
+  gg : start of file
+  G : end of file
+
+  SEARCH:
+  /<word> : search <word>
+  n : move to next instance of the most recently searched word
+
+  VISUAL MODE:
+  In ESC mode, press v : enters "visual" mode
+  in visual mode-  you can select using arrow keys, starting from current cursor location. 
+
+  VIM-ONLY:
+    :%s/findword/replaceword/gc : search and replace one by one
+    :noh
+
+window manager (Finder) shortcuts:
+  cmd + W : close tab
+  cmd + N : new file/tab
+  cmd + O : open new
+  cmd + Q : quit application
+  cmd + S : save file
+  cmd + sh + S : save as
+  ctrl + tab : cycle through tabs
+  cmd + tab : cycle through application
+
