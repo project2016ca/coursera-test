@@ -1,13 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="MyFirstApp" >
 <head>
 	<meta chardet="utf-8">
+        <script src="angular.min.js"> </script>
+        <script src="app.js"> </script>
 	<title> Hello coursera </title>
-</head>
+</head >
 
 	<body>
 		<h1>Hello coursera student :) :) !! I am excited about this course...
 	</h1>
 	</body>
 
+	<div ng-controller="MyFirstController">
+		{{name}}
+	</div>
 </html>
