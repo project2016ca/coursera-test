@@ -51,6 +51,36 @@ var service = this;
 var Tobuyitems = [];
 var Alreadybouhgtitems = [];
 
+	var item1 = {
+	name : "milk" ,
+	quantity : "10 bottles"
+	};
+	Tobuyitems.push(item1);
+
+	item1 = {
+	name : "sugar" ,
+	quantity : "2 bags"
+	};
+	Tobuyitems.push(item1);
+
+	item1 = {
+	name : "rice" ,
+	quantity : "10 bags"
+	};
+	Tobuyitems.push(item1);
+
+	item1 = {
+	name : "gold" ,
+	quantity : "2 coins"
+	};
+	Tobuyitems.push(item1);
+
+	item1 = {
+	name : "diamonds" ,
+	quantity : "10 bags"
+	};
+	Tobuyitems.push(item1);
+
 service.getTobuyItems = function () {
  return Tobuyitems;
 };
