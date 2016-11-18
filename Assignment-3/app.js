@@ -3,7 +3,15 @@
 
 angular.module('NarrowItDownApp', [])
 .controller('NarrowItDownController',NarrowItDownController)
-.service('NarrowItDownService',NarrowItDownService);
+.service('NarrowItDownService',NarrowItDownService)
+.directive('narrowedItem', NarrowedItem);
+
+function NarrowedItem() {
+   var ddo = {
+      templateUrl: 'narrowedItem.html'
+   };
+   return ddo;
+}
 
 NarrowItDownController.$inject = ['NarrowItDownService'];
 function NarrowItDownController(NarrowItDownService) {
