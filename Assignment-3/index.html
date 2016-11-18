@@ -18,20 +18,14 @@
     <div class="form-group narrow-button">
       <button class="btn btn-primary" ng-click = menu.NarrowDown(); >Narrow It Down For Me!</button>
       <ul>
-        {{menu.l}}
+       
       <li ng-repeat="category in menu.p">
-         
-
-          {{ category.name}}  ----- 
-          {{ category.short_name}}  ----- 
-          {{ category.description}}
-          <!-- {{menu.searchText}} -->
-          
-        
-          <!-- {{menu.p}} -->
-          
+          {{ category.name}}--{{ category.short_name}}--{{ category.description}}
+          <button class="btn btn-primary" ng-click = menu.Remove($index); >Don't want this one!</button>
         </li>
       </ul>  
+      <div class="emptyMessage" ng-if = "!menu.p.length">Nothing found!</div>
+      
     </div>
 
     <!-- found-items should be implemented as a component -->

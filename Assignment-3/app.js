@@ -11,21 +11,24 @@ function NarrowItDownController(NarrowItDownService) {
 
    menu.searchText = "";
 
-   menu.NarrowDown = function () {
-   
-   var promise = NarrowItDownService.getMenu();
+   menu.Remove = function (index) 
+   {
 
-   promise.then(function (response) {
-   	 menu.p = NarrowItDownService.getMatchedMenuItems(menu.searchText,response);
-   	
-   	
-   })
-   .catch(function (error) {
-   	console.log("Something went wrong.");
+       NarrowItDownService.Remove(index);
+   };
 
-   });
+   menu.NarrowDown = function () 
+   {
+      var promise = NarrowItDownService.getMenu();
+      promise.then(function (response) {
+      	 menu.p = NarrowItDownService.getMatchedMenuItems(menu.searchText,response);
+      })
+      .catch(function (error) 
+      {
+      	console.log("Something went wrong.");
+      });
 
- };
+   };
    
 
 }
@@ -33,31 +36,37 @@ function NarrowItDownController(NarrowItDownService) {
 NarrowItDownService.$inject = ['$http'];
 function NarrowItDownService($http) {
 	var service = this;
-
 	var p = [];
 	service.getMenu = function (searchText) {
 		var response = $http({
 			method: "GET" ,
 			url: ("https://davids-restaurant.herokuapp.com/menu_items.json")
 		});
-
-   	
 		return response;
 	};
 
+   service.Remove = function (index) 
+   {
+      p.splice(index,1);
+   };
+
+
+
 	service.getMatchedMenuItems = function(searchTerm,response)
 	{
-		var p = [];
+		 p = [];
+       if (searchTerm == "")
+       { p = []; }
+      else
+      {
+            for (var i=0 ; i< response.data.menu_items.length ; i++)
+   		    {
+   			   if (response.data.menu_items[i].description.search(searchTerm) != -1)
+   			      {  p.push(response.data.menu_items[i]);  };
+   		    };
+      };
 
-		for (var i=0 ; i< response.data.menu_items.length ; i++)
-   		{
-   			
-   			if (response.data.menu_items[i].description.search(searchTerm) != -1)
-   			{  p.push(response.data.menu_items[i]);  };
-   		};
-   	
 		return p;
-
 	};
 }
 
