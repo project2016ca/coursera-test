@@ -16,6 +16,7 @@ function MenuDataService($http) {
     var response = $http({
       method: "GET" ,
       url: ("https://davids-restaurant.herokuapp.com/categories.json")
+      
     });
     return response;
    
