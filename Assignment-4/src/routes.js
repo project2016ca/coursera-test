@@ -28,7 +28,7 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
     //   items: ['ShoppingListService', function (ShoppingListService) {
     //     return ShoppingListService.getItems();
     //   }]
-    }
+    // }
   })
 
   // .state('categories.items', {
