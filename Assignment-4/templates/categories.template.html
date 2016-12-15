@@ -1,6 +1,6 @@
 <a ui-sref="categories">Categories List!!!!!!!!!!!!!!!!!</a>
 <ul>
-  <li ng-repeat="item in mainList.items" >
+  <li ng-repeat="item in mainList.items" ui-sref="mainList.itemDetail({itemId: $index})">
   	{{item.name}}
   </li>
 </ul>
