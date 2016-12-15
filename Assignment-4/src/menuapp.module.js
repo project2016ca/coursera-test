@@ -9,8 +9,10 @@ angular.module('MenuApp', ['ui.router','data'])
 MainController.$inject = ['MenuDataService', 'items'];
 function MainController(MenuDataService, items) {
   var mainList = this;
-  mainList.items = items.data;
+  mainList.items = items;
 }
+
+
 
 })();
 
