@@ -15,22 +15,22 @@ function MenuDataService($http) {
   service.getAllCategories = function () {
     var response = $http({
       method: "GET" ,
-      url: ("https://davids-restaurant.herokuapp.com/categories.json")
+      url: ("s")
       
     });
     return response;
    
   };
 
-  service.getItemsForCategory = function (categoryShortName){
-    var response = $http({
-      method: "GET" ,
-      url: ("https://davids-restaurant.herokuapp.com/menu_items.json?category="+categoryShortName)
-    });
-    return response;
+  // service.getItemsForCategory = function (categoryShortName){
+  //   var response = $http({
+  //     method: "GET" ,
+  //     url: ("https://davids-restaurant.herokuapp.com/menu_items.json?category="+categoryShortName)
+  //   });
+  //   return response;
+  // };
 
-
-  };
+  
 }
 
 })();

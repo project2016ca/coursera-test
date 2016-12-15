@@ -32,11 +32,21 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
     }
   })
 
-  // .state('categories.items', {
-  //   url: '/items/{itemId}',
-  //   templateUrl: 'src/shoppinglist/templates/item-detail.template.html',
-  //   controller: "ItemDetailController as itemDetail"
-  // });
+  .state('categories.items', {
+    url: '/items/{itemId}',
+    templateUrl: 'templates/item-detail.template.html',
+    controller: "ItemDetailController as itemDetail",
+    resolve: {
+      item: ['$stateParams', 'MenuDataService',
+            function ($stateParams, MenuDataService) {
+              return MenuDataService.getAllCategories()
+                .then(function (items) {
+                  return items[$stateParams.itemId];
+                });
+            }]
+    }
+
+  });
 
 }
 
