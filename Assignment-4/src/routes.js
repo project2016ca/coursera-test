@@ -22,12 +22,12 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
   // Premade list page
   .state('categories', {
     url: '/categories',
-    templateUrl: 'templates/categories.template.html'
-    // controller: 'MainController as mainList',
-    // resolve: {
-    //   items: ['MenuDataService', function (MenuDataService) {
-    //     return MenuDataService.getAllCategories();
-    //   }]
+    templateUrl: 'templates/categories.template.html',
+    controller: 'MainController as mainList',
+    resolve: {
+      items: ['MenuDataService', function (MenuDataService) {
+        return MenuDataService.getAllCategories();
+      }]
     }
   })
 
