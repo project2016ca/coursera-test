@@ -42,7 +42,7 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
               return MenuDataService.getAllCategories()
                 // .then(function (items) {
                 //   // return items[$stateParams.itemId];
-                //   return items;
+                //   return items[$stateParams.itemId];
                 // });
             }]
     }
