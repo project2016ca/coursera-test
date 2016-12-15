@@ -6,6 +6,7 @@ angular.module('MenuApp')
 
 RoutesConfig.$inject = ['$stateProvider', '$urlRouterProvider'];
 function RoutesConfig($stateProvider, $urlRouterProvider) {
+  var items = [];
 
   // Redirect to home page if no other URL matches
   $urlRouterProvider.otherwise('/');
