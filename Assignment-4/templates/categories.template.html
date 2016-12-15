@@ -1,7 +1,9 @@
 <a ui-sref="categories">Categories List!!!!!!!!!!!!!!!!!</a>
 <ul>
   <li ng-repeat="item in mainList.items" >
-    {{ item.id }} ---{{item}}
+  	<li ng-repeat="p in item">
+  		{{p.id}}
+  	</li>
   </li>
 </ul>
 
