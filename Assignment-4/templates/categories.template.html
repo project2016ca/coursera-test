@@ -2,7 +2,7 @@
 
 <a ui-sref="categories">Categories List!!!!!!!!!!!!!!!!!</a>
 <ul>
-  <li ng-repeat="item in mainList.items" ui-sref="items">
+  <li ui-sref="items" ng-repeat="item in mainList.items" >
   	{{item.name}}
   </li>
 </ul>
