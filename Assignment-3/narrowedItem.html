@@ -10,7 +10,8 @@
       <button class="btn btn-primary" ng-click = menu.NarrowDown(); >Narrow It Down For Me!</button>
       <ul>
       <li ng-repeat="category in menu.p">
-          {{ category.name}}--{{ category.short_name}}--{{ category.description}}
+         {{category}}
+          <!-- {{ category.name}}--{{ category.short_name}}--{{ category.description}} -->
           <button class="btn btn-primary" ng-click = menu.Remove($index); >Don't want this one!</button>
       </li>
       </ul>  
