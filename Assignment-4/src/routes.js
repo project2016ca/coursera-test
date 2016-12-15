@@ -32,7 +32,7 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
     }
   })
 
-  .state('items', {
+  .state('categories.items', {
     url: '/items/{itemId}',
     templateUrl: 'templates/item-detail.template.html',
     controller: "ItemDetailController as itemDetail",
@@ -40,8 +40,8 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
       item: ['$stateParams', 'MenuDataService',
             function ($stateParams, MenuDataService) {
               return MenuDataService.getAllCategories()
-                .then(function (items) {
-                  return items[$stateParams.itemId];
+                .then(function (items.data) {
+                  return items.data[$stateParams.itemId];
                 });
             }]
     }
