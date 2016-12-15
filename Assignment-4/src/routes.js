@@ -36,16 +36,16 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
     url: '/items/{itemId}',
     templateUrl: 'templates/item-detail.template.html',
     controller: "ItemDetailController as itemDetail",
-    resolve: {
-      item: ['$stateParams', 'MenuDataService',
-            function ($stateParams, MenuDataService) {
-              return MenuDataService.getAllCategories()
-                // .then(function (items) {
-                //   // return items[$stateParams.itemId];
-                //   return items[$stateParams.itemId];
-                // });
-            }]
-    }
+    // resolve: {
+    //   item: ['$stateParams', 'MenuDataService',
+    //         function ($stateParams, MenuDataService) {
+    //           return MenuDataService.getAllCategories()
+    //             // .then(function (items) {
+    //             //   // return items[$stateParams.itemId];
+    //             //   return items[$stateParams.itemId];
+    //             // });
+    //         }]
+    // }
 
   });
 
