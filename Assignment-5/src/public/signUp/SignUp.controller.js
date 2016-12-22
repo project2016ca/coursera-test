@@ -9,13 +9,13 @@ RegistrationController.$inject = ['saveInfoService'];
 function RegistrationController(saveInfoService) {
   var reg = this;
 
- reg.user = { 
-             username : "",
-             email : "",
-             phone : ""
-          };
+ // reg.user = { 
+ //             username : "",
+ //             email : "",
+ //             phone : ""
+ //          };
 
-  reg.comment = "";
+ //  reg.comment = "";
 
   reg.submit = function () {
     reg.completed = true;
