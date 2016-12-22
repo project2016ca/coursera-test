@@ -8,6 +8,7 @@ angular.module('SimpleFormsApp')
 function RegistrationController() {
   var reg = this;
 
+  reg.ss = "sdff";
   reg.submit = function () {
     reg.completed = true;
   };
