@@ -10,7 +10,7 @@ function RegistrationController(saveInfoService) {
   var reg = this;
   console.log("I am in submit function");
  
-  var reg.ss = "shweta";
+  reg.ss = "shweta";
 
   reg.completed = false;
   reg.submit = function () {
