@@ -11,7 +11,7 @@ function saveInfoService() {
 
   var user = {
         
-         var username = "";
+             var username = "";
              var email = "";
              var phone = "";
         };
