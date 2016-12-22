@@ -18,7 +18,7 @@ function RegistrationController(saveInfoService) {
  //  reg.comment = "";
   reg.ss = "shweta";
 
-  var reg.completed = false;
+  reg.completed = false;
    reg.submit = function () {
     console.log("I am in submit function");
 
