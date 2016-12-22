@@ -9,13 +9,7 @@ RegistrationController.$inject = ['saveInfoService'];
 function RegistrationController(saveInfoService) {
   var reg = this;
   console.log("I am in submit function");
- // reg.user = { 
- //             username : "",
- //             email : "",
- //             phone : ""
- //          };
-
- //  reg.comment = "";
+ 
   reg.ss = "shweta";
 
   reg.completed = false;
