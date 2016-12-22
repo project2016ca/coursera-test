@@ -16,19 +16,15 @@ function RegistrationController(saveInfoService) {
  //          };
 
  //  reg.comment = "";
-    reg.ss = "shweta";
+  reg.ss = "shweta";
 
-    reg.completed = false;
-    reg.submit = function () {
+  reg.completed = false;
+  reg.submit = function () {
+    sldmsld
     console.log("I am in submit function");
-
     reg.completed = true;
-     
     saveInfoService.user = reg.user;
-
     reg.comment = " Your Information has been saved !! ";
-
-
   };
 }
 
