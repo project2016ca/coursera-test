@@ -17,7 +17,8 @@ function RegistrationController(saveInfoService) {
 
  //  reg.comment = "";
 
-  reg.submit = function () {
+  reg.completed = "false";
+   reg.submit = function () {
     reg.completed = true;
      
     saveInfoService.user = reg.user;
