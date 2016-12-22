@@ -8,7 +8,7 @@ angular.module('SimpleFormsApp')
 RegistrationController.$inject = ['saveInfoService'];
 function RegistrationController(saveInfoService) {
   var reg = this;
- console.log("I am in submit function");
+  console.log("I am in submit function");
  // reg.user = { 
  //             username : "",
  //             email : "",
