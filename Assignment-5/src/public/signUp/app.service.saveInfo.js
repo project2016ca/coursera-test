@@ -10,9 +10,9 @@ function saveInfoService() {
   var service = this;
 
   var user = {
-             username = "";
-             email = "";
-             phone = "";
+             username = "",
+             email = "",
+             phone = ""
         };
 
 
