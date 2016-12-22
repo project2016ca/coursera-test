@@ -9,10 +9,10 @@ angular.module('SimpleFormsApp')
 function saveInfoService() {
   var service = this;
 
-  var user = {
-             username = "",
-             email = "",
-             phone = ""
+  var user : {
+             username : "",
+             email : "",
+             phone : ""
         };
 
 
