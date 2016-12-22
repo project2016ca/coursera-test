@@ -10,9 +10,9 @@ function RegistrationController(saveInfoService) {
   var reg = this;
 
  reg.user = { 
-             var username = "";
-             var email = "";
-             var phone = "";
+             username = "";
+             email = "";
+             phone = "";
           };
 
   reg.comment = "";
