@@ -6,11 +6,13 @@ angular.module('SimpleFormsApp')
 .controller('RegistrationController', RegistrationController);
 
 function RegistrationController() {
-  
+var reg = this;
 
-  $scope.ss = "sdff";
-  $scope.submit = function () {
-    $scope.completed = true;
+
+  reg.ss = "sdff";
+  reg.submit = function () {
+  	sfgdfggf;
+    reg.completed = true;
   };
 }
 
