@@ -2,7 +2,4 @@
 
 angular.module('SimpleFormsApp',[]);
 
-
-
-
 })();

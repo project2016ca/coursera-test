@@ -9,7 +9,7 @@ MyInfoController.$inject = ['saveInfoService'];
 function MyInfoController(saveInfoService) {
   var MyInfo = this;
   
-  MyInfo.user = saveInfoService.user;
+  // MyInfo.user = saveInfoService.user;
 }
 
 })();
