@@ -16,10 +16,14 @@ function RegistrationController(saveInfoService) {
   	         var phone = "";
   	      };
 
+  var reg.comment = "";
+
   reg.submit = function () {
     reg.completed = true;
      
     SaveMyInfo.username = reg.user;
+
+    reg.comment = " Your Information has been saved !! ";
 
 
   };
