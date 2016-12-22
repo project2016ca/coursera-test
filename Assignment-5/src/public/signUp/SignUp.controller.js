@@ -16,7 +16,7 @@ function RegistrationController(saveInfoService) {
  //          };
 
  //  reg.comment = "";
- reg.ss = "shweta";
+ var reg.ss = "shweta";
 
   var reg.completed = false;
    reg.submit = function () {
