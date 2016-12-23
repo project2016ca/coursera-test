@@ -11,7 +11,6 @@ var reg = this;
 
   reg.ss = "sdff";
   reg.submit = function () {
-  	sfgdfggf;
     reg.completed = true;
   };
 }
