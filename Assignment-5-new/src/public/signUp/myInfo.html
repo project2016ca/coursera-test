@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html ng-app="SimpleFormsApp">
+
+<head>
+
+<meta charset="utf-8">
+
+<title>Newsletter Registration Information</title>
+
+</head>
+
+<body ng-controller="RegistrationController as reg">
+
+<h1>Newsletter Registration Information</h1>
+
+<div id="info">
+
+first name: {{ reg.user.firstname}} <br>
+
+last name: {{ reg.user.lastname}} <br>
+
+Email: {{ reg.user.email}} <br>
+
+Phone: {{ reg.user.phone }} <br>
+
+Menu item: {{ reg.user.menuitem }}
+
+</div>
+
+
+
+</body>
+
+</html>
+
