@@ -1,8 +1,7 @@
 (function () {
 
-angular.module('SimpleFormsApp',[]);
 
-angular.module('SimpleFormsApp')
+angular.module('public')
 .controller('RegistrationController', RegistrationController);
 
 function RegistrationController() {
