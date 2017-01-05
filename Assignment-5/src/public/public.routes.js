@@ -28,7 +28,12 @@ function routeConfig ($stateProvider) {
       url: '/myInfo',
       templateUrl: 'src/public/signUp/myInfo.html',
       controller: 'MyInfoController',
-      controllerAs: 'reg'
+      controllerAs: 'reg',
+      resolve: {
+        menuCategories: ['saveInfoService', function (saveInfoService) {
+          return saveInfoService.getCategories();
+        }]
+      }
 
     })
     .state('public.menu', {
