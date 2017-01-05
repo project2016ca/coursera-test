@@ -15,7 +15,15 @@ function saveInfoService() {
              email : "",
              phone : ""
         };
+  function to retrive all the categories
+  service.getCategories = function () {
+    var response = $http({
+               method: "GET" ,
+               url: ("https://shweta-a5.herokuapp.com/menu_items.json")
 
+             });
+             return response;
+  };
 
 }
 
