@@ -29,9 +29,7 @@ function routeConfig ($stateProvider) {
       templateUrl: 'src/public/signUp/myInfo.html',
       controller: 'MyInfoController',
       controllerAs: 'reg',
-      resolve: {
-         menuCategories: null;
-         }]
+
       }
 
     })

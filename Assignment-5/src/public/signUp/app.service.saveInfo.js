@@ -13,17 +13,11 @@ function saveInfoService() {
              firstname : "",
              lastname : "",
              email : "",
-             phone : ""
+             phone : "",
+             c : ""
         };
-  //function to retrive all the categories
-  service.getCategories = function () {
-    var response = $http({
-               method: "GET" ,
-               url: ("https://shweta-a5.herokuapp.com/menu_items.json")
 
-             });
-             return response;
-  };
+
 
 }
 

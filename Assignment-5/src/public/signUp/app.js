@@ -11,15 +11,10 @@ var reg = this;
 
   reg.ss = "sdff";
   reg.submit = function () {
-    reg.completed = true;
+    reg.user.completed = true;
     saveInfoService.user = reg.user;
-    
+
   };
 }
 
 })();
-
-
-
-
-
