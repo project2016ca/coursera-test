@@ -13,8 +13,7 @@ function saveInfoService() {
              firstname : "",
              lastname : "",
              email : "",
-             phone : "",
-             c : ""
+             phone : ""
         };
 
 
