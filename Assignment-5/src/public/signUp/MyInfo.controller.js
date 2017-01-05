@@ -5,7 +5,7 @@ angular.module('public')
 .controller('MyInfoController', MyInfoController);
 
 
-MyInfoController.$inject = ['saveInfoService', menuCategories];
+MyInfoController.$inject = ['saveInfoService', 'menuCategories'];
 function MyInfoController(saveInfoService, menuCategories) {
   var MyInfo = this;
 
