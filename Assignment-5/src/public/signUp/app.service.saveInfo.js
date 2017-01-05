@@ -15,7 +15,7 @@ function saveInfoService() {
              email : "",
              phone : ""
         };
-  function to retrive all the categories
+  //function to retrive all the categories
   service.getCategories = function () {
     var response = $http({
                method: "GET" ,
