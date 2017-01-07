@@ -14,7 +14,8 @@ function saveInfoService() {
              firstname : "",
              lastname : "",
              email : "",
-             phone : ""
+             phone : "",
+             menu : ""
         };
 
 

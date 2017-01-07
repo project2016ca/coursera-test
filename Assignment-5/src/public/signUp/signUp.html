@@ -63,6 +63,14 @@
           </span>
           <br>
 
+          <input type="text" placeholder="menu-category-Ex:A3,A7 ..etc."
+            ng-model="reg.user.menu"
+            required>
+            <span ng-if="regForm.phone.$invalid && regForm.phone.$touched">
+              Please enter your favorite menu-item!.
+            </span>
+            <br>
+
         <button
           ng-disabled="regForm.$invalid"
           ng-click="reg.submit()">Submit</button>
@@ -79,10 +87,10 @@
 
     <div id="info" ng-if="reg.completed">
       Username: {{ reg.user}} <br>
-     
+
     </div>
 
-    
+
     <script src="src/public/signUp/app.js"></script>
 
   </body>
