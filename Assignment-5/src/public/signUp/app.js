@@ -13,6 +13,7 @@ var reg = this;
   reg.submit = function () {
     reg.completed = true;
     saveInfoService.user = reg.user;
+    saveInfoService.completed = reg.completed;
 
   };
 }

@@ -8,6 +8,7 @@ angular.module('public')
 
 function saveInfoService() {
   var service = this;
+  var completed = false;
 
   var user = {
              firstname : "",

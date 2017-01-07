@@ -10,7 +10,8 @@ function MyInfoController(saveInfoService) {
   var MyInfo = this;
 
   MyInfo.user = saveInfoService.user;
-  
+  MyInfo.completed = saveInfoService.completed;
+
 
 }
 

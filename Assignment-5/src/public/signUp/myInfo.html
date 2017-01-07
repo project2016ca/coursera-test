@@ -14,7 +14,7 @@
 
 <h1>Newsletter Registration Information</h1>
 
-<div id="info"  >
+<div id="info" ng-if="reg.completed" >
 
 first name: {{ reg.user.firstname}} <br>
 
@@ -28,6 +28,12 @@ Categories: A3 <br>
 
 
 
+</div>
+
+<div id="info" ng-if="!reg.completed" >
+
+  You have not registered yet. Please Sign Up here:
+  <a ui-sref = "public.signUp"> Sign Up!</a>
 </div>
 
 
